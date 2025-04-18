@@ -4,79 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Dawlish Warren Pharmacy – Services</title>
+    <title>Services – Dawlish Warren Pharmacy</title>
   </head>
   <body class="bg-white text-gray-900 font-sans">
 
-    <!-- Header -->
+    <!-- Shared Navigation -->
     <header class="p-6 border-b shadow-sm bg-white sticky top-0 z-50">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
         <h1 class="text-2xl font-bold">Dawlish Warren Pharmacy</h1>
-        <a href="#" class="bg-blue-600 text-white rounded-2xl px-6 py-2 text-sm hover:bg-blue-700 transition">Book Now</a>
+        <nav class="space-x-4">
+          <a href="index.html" class="text-sm text-gray-700 hover:text-blue-600">Home</a>
+          <a href="about.html" class="text-sm text-gray-700 hover:text-blue-600">About</a>
+          <a href="service.html" class="text-sm text-blue-600 font-semibold">Services</a>
+          <a href="booking.html" class="text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-2xl">Book</a>
+        </nav>
       </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="bg-blue-50 py-20 text-center">
       <div class="max-w-4xl mx-auto px-4">
         <h2 class="text-4xl font-bold mb-4">Our Services</h2>
-        <p class="text-lg text-gray-600">
-          We provide a wide range of NHS and private services to support your health and wellbeing.
-        </p>
+        <p class="text-lg text-gray-600">Explore our NHS and private health services tailored to your needs.</p>
       </div>
     </section>
 
-    <!-- Services Grid -->
     <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          
-          <!-- Service Cards -->
-          <div class="shadow-md rounded-2xl p-6 bg-white">
-            <h3 class="text-xl font-bold mb-2">NHS Pharmacy First Service</h3>
-            <p class="text-gray-600 text-sm">Access treatment for common conditions without needing a GP appointment.</p>
-          </div>
-
-          <div class="shadow-md rounded-2xl p-6 bg-white">
-            <h3 class="text-xl font-bold mb-2">COVID Vaccinations</h3>
-            <p class="text-gray-600 text-sm">Protect yourself and others with our convenient COVID vaccination service.</p>
-          </div>
-
-          <div class="shadow-md rounded-2xl p-6 bg-white">
-            <h3 class="text-xl font-bold mb-2">Blood Pressure Checks</h3>
-            <p class="text-gray-600 text-sm">Monitor your heart health with free NHS blood pressure checks.</p>
-          </div>
-
-          <div class="shadow-md rounded-2xl p-6 bg-white">
-            <h3 class="text-xl font-bold mb-2">Contraception Service</h3>
-            <p class="text-gray-600 text-sm">Confidential advice and NHS-supplied oral contraception.</p>
-          </div>
-
-          <div class="shadow-md rounded-2xl p-6 bg-white">
-            <h3 class="text-xl font-bold mb-2">Travel Clinic</h3>
-            <p class="text-gray-600 text-sm">Get expert advice, vaccines, and medication for safe travel abroad.</p>
-          </div>
-
-          <div class="shadow-md rounded-2xl p-6 bg-white">
-            <h3 class="text-xl font-bold mb-2">Weight Loss Support</h3>
-            <p class="text-gray-600 text-sm">Personalised plans and medication to help you reach your health goals.</p>
-          </div>
-
-          <div class="shadow-md rounded-2xl p-6 bg-white">
-            <h3 class="text-xl font-bold mb-2">Ear Wax Removal</h3>
-            <p class="text-gray-600 text-sm">Safe, professional ear microsuction services available by appointment.</p>
-          </div>
-
+      <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Repeatable Card -->
+        <div class="bg-white shadow-md rounded-2xl p-6">
+          <h4 class="text-xl font-bold mb-2">Pharmacy First</h4>
+          <p class="text-sm text-gray-600">NHS treatment for common conditions without a GP appointment.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl p-6">
+          <h4 class="text-xl font-bold mb-2">Travel Clinic</h4>
+          <p class="text-sm text-gray-600">Vaccines and travel health advice for safe trips abroad.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl p-6">
+          <h4 class="text-xl font-bold mb-2">Blood Pressure Checks</h4>
+          <p class="text-sm text-gray-600">Monitor your heart health for free with NHS checks.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl p-6">
+          <h4 class="text-xl font-bold mb-2">Contraception</h4>
+          <p class="text-sm text-gray-600">Confidential access to NHS-supplied oral contraception.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl p-6">
+          <h4 class="text-xl font-bold mb-2">Weight Loss Support</h4>
+          <p class="text-sm text-gray-600">Lifestyle advice and medications to support your goals.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl p-6">
+          <h4 class="text-xl font-bold mb-2">Ear Wax Removal</h4>
+          <p class="text-sm text-gray-600">Professional microsuction services for clearer hearing.</p>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 py-10 mt-20">
+    <footer class="bg-gray-100 py-10">
       <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
         &copy; 2025 Dawlish Warren Pharmacy. All rights reserved.
       </div>
     </footer>
-
   </body>
 </html>
