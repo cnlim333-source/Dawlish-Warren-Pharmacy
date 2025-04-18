@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Dawlish Warren Pharmacy</title>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
@@ -22,7 +25,7 @@
   </header>
 
   <!-- Hero -->
-  <section class="bg-blue-100 py-24 text-center">
+  <section class="bg-blue-100 py-24 text-center" data-aos="zoom-in">
     <div class="max-w-3xl mx-auto px-4">
       <h2 class="text-5xl font-bold mb-4">Your Local Health Partner</h2>
       <p class="text-lg text-gray-600 mb-6">
@@ -37,15 +40,24 @@
   <!-- Features -->
   <section class="py-16">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-      <div class="bg-white p-6 rounded-2xl shadow-md">
+      <div class="bg-white p-6 rounded-2xl shadow-md" data-aos="fade-up">
+        <div class="flex justify-center mb-3">
+          <i data-lucide="shield-check" class="w-6 h-6 text-blue-600"></i>
+        </div>
         <h4 class="text-xl font-bold mb-2">NHS Services</h4>
         <p class="text-sm text-gray-600">We offer trusted, accessible care supported by the NHS.</p>
       </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md">
+      <div class="bg-white p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex justify-center mb-3">
+          <i data-lucide="user-check" class="w-6 h-6 text-blue-600"></i>
+        </div>
         <h4 class="text-xl font-bold mb-2">Expert Advice</h4>
         <p class="text-sm text-gray-600">Friendly pharmacists ready to support your health needs.</p>
       </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md">
+      <div class="bg-white p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex justify-center mb-3">
+          <i data-lucide="home" class="w-6 h-6 text-blue-600"></i>
+        </div>
         <h4 class="text-xl font-bold mb-2">Community Focused</h4>
         <p class="text-sm text-gray-600">Serving Dawlish Warren with personalized attention.</p>
       </div>
@@ -58,6 +70,10 @@
       &copy; 2025 Dawlish Warren Pharmacy. All rights reserved.
     </div>
   </footer>
+
+  <script>
+    lucide.createIcons();
+    AOS.init();
+  </script>
 </body>
 </html>
-
