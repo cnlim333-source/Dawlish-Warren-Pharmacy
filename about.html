@@ -7,7 +7,22 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <title>About Us – Dawlish Warren Pharmacy</title>
+  <title>Dawlish Warren Pharmacy</title>
+  <style>
+    body::before {
+      content: "";
+      background-image: url('https://images.unsplash.com/photo-1588776814812-e1608a6e31de?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.08;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
@@ -16,47 +31,50 @@
     <div class="max-w-7xl mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">Dawlish Warren Pharmacy</h1>
       <nav class="space-x-4">
-        <a href="index.html" class="text-sm text-gray-700 hover:text-blue-600">Home</a>
-        <a href="about.html" class="text-sm text-blue-600 font-semibold">About</a>
+        <a href="index.html" class="text-sm text-blue-600 font-semibold">Home</a>
+        <a href="about.html" class="text-sm text-gray-700 hover:text-blue-600">About</a>
         <a href="service.html" class="text-sm text-gray-700 hover:text-blue-600">Services</a>
         <a href="booking.html" class="text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-2xl">Book</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-blue-50 py-20 text-center" data-aos="zoom-in">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-4">About Dawlish Warren Pharmacy</h2>
-      <p class="text-lg text-gray-600">
-        We're proud to be your trusted healthcare partner, providing NHS services with a personal touch.
+  <!-- Hero -->
+  <section class="bg-blue-100 py-24 text-center" data-aos="zoom-in">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-5xl font-bold mb-4">Your Local Health Partner</h2>
+      <p class="text-lg text-gray-600 mb-6">
+        NHS-approved services, trusted advice, and caring professionals in Dawlish Warren.
       </p>
+      <a href="booking.html" class="bg-blue-600 text-white px-8 py-3 rounded-2xl text-lg hover:bg-blue-700 transition">
+        Book an Appointment
+      </a>
     </div>
   </section>
 
-  <!-- Mission & Values -->
+  <!-- Features -->
   <section class="py-16">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
       <div class="bg-white p-6 rounded-2xl shadow-md" data-aos="fade-up">
         <div class="flex justify-center mb-3">
-          <i data-lucide="heart-pulse" class="w-6 h-6 text-blue-600"></i>
+          <i data-lucide="shield-check" class="w-6 h-6 text-blue-600"></i>
         </div>
-        <h4 class="text-xl font-bold mb-2">Patient-Centered</h4>
-        <p class="text-sm text-gray-600">Your wellbeing is always our top priority.</p>
+        <h4 class="text-xl font-bold mb-2">NHS Services</h4>
+        <p class="text-sm text-gray-600">We offer trusted, accessible care supported by the NHS.</p>
       </div>
       <div class="bg-white p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
         <div class="flex justify-center mb-3">
-          <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-600"></i>
+          <i data-lucide="user-check" class="w-6 h-6 text-blue-600"></i>
         </div>
-        <h4 class="text-xl font-bold mb-2">Expert Care</h4>
-        <p class="text-sm text-gray-600">Our experienced team is here with trusted, friendly advice.</p>
+        <h4 class="text-xl font-bold mb-2">Expert Advice</h4>
+        <p class="text-sm text-gray-600">Friendly pharmacists ready to support your health needs.</p>
       </div>
       <div class="bg-white p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
         <div class="flex justify-center mb-3">
-          <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+          <i data-lucide="home" class="w-6 h-6 text-blue-600"></i>
         </div>
-        <h4 class="text-xl font-bold mb-2">Locally Focused</h4>
-        <p class="text-sm text-gray-600">We care deeply about the health of our community.</p>
+        <h4 class="text-xl font-bold mb-2">Community Focused</h4>
+        <p class="text-sm text-gray-600">Serving Dawlish Warren with personalized attention.</p>
       </div>
     </div>
   </section>
@@ -74,3 +92,4 @@
   </script>
 </body>
 </html>
+
