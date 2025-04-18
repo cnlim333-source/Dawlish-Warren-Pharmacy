@@ -1,65 +1,82 @@
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dawlish Warren Pharmacy – Services</title>
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
 
-export default function ServicesPage() {
-  return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <header className="p-6 border-b shadow-sm">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Dawlish Warren Pharmacy</h1>
-        </div>
-      </header>
+    <!-- Header -->
+    <header class="p-6 border-b shadow-sm bg-white sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Dawlish Warren Pharmacy</h1>
+        <a href="#" class="bg-blue-600 text-white rounded-2xl px-6 py-2 text-sm hover:bg-blue-700 transition">Book Now</a>
+      </div>
+    </header>
 
-      <section className="bg-blue-50 py-20 text-center">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-4">Our Services</h2>
-          <p className="text-lg text-gray-600">
-            We provide a wide range of NHS and private services to support your health and wellbeing.
-          </p>
-        </div>
-      </section>
+    <!-- Hero Section -->
+    <section class="bg-blue-50 py-20 text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-4">Our Services</h2>
+        <p class="text-lg text-gray-600">
+          We provide a wide range of NHS and private services to support your health and wellbeing.
+        </p>
+      </div>
+    </section>
 
-      <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {[{
-              title: "NHS Pharmacy First Service",
-              description: "Access treatment for common conditions without needing a GP appointment."
-            }, {
-              title: "COVID Vaccinations",
-              description: "Protect yourself and others with our convenient COVID vaccination service."
-            }, {
-              title: "Blood Pressure Checks",
-              description: "Monitor your heart health with free NHS blood pressure checks."
-            }, {
-              title: "Contraception Service",
-              description: "Confidential advice and NHS-supplied oral contraception."
-            }, {
-              title: "Travel Clinic",
-              description: "Get expert advice, vaccines, and medication for safe travel abroad."
-            }, {
-              title: "Weight Loss Support",
-              description: "Personalised plans and medication to help you reach your health goals."
-            }, {
-              title: "Ear Wax Removal",
-              description: "Safe, professional ear microsuction services available by appointment."
-            }].map((service, index) => (
-              <Card key={index} className="shadow-md rounded-2xl">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold mb-2">{service.title}</h4>
-                  <p className="text-gray-600 text-sm">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+    <!-- Services Grid -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          
+          <!-- Service Cards -->
+          <div class="shadow-md rounded-2xl p-6 bg-white">
+            <h3 class="text-xl font-bold mb-2">NHS Pharmacy First Service</h3>
+            <p class="text-gray-600 text-sm">Access treatment for common conditions without needing a GP appointment.</p>
           </div>
-        </div>
-      </section>
 
-      <footer className="bg-gray-100 py-10 mt-20">
-        <div className="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
-          &copy; 2025 Dawlish Warren Pharmacy. All rights reserved.
+          <div class="shadow-md rounded-2xl p-6 bg-white">
+            <h3 class="text-xl font-bold mb-2">COVID Vaccinations</h3>
+            <p class="text-gray-600 text-sm">Protect yourself and others with our convenient COVID vaccination service.</p>
+          </div>
+
+          <div class="shadow-md rounded-2xl p-6 bg-white">
+            <h3 class="text-xl font-bold mb-2">Blood Pressure Checks</h3>
+            <p class="text-gray-600 text-sm">Monitor your heart health with free NHS blood pressure checks.</p>
+          </div>
+
+          <div class="shadow-md rounded-2xl p-6 bg-white">
+            <h3 class="text-xl font-bold mb-2">Contraception Service</h3>
+            <p class="text-gray-600 text-sm">Confidential advice and NHS-supplied oral contraception.</p>
+          </div>
+
+          <div class="shadow-md rounded-2xl p-6 bg-white">
+            <h3 class="text-xl font-bold mb-2">Travel Clinic</h3>
+            <p class="text-gray-600 text-sm">Get expert advice, vaccines, and medication for safe travel abroad.</p>
+          </div>
+
+          <div class="shadow-md rounded-2xl p-6 bg-white">
+            <h3 class="text-xl font-bold mb-2">Weight Loss Support</h3>
+            <p class="text-gray-600 text-sm">Personalised plans and medication to help you reach your health goals.</p>
+          </div>
+
+          <div class="shadow-md rounded-2xl p-6 bg-white">
+            <h3 class="text-xl font-bold mb-2">Ear Wax Removal</h3>
+            <p class="text-gray-600 text-sm">Safe, professional ear microsuction services available by appointment.</p>
+          </div>
+
         </div>
-      </footer>
-    </div>
-  );
-}
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-10 mt-20">
+      <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
+        &copy; 2025 Dawlish Warren Pharmacy. All rights reserved.
+      </div>
+    </footer>
+
+  </body>
+</html>
