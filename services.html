@@ -1,0 +1,65 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+
+export default function ServicesPage() {
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      <header className="p-6 border-b shadow-sm">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <h1 className="text-2xl font-bold">Dawlish Warren Pharmacy</h1>
+        </div>
+      </header>
+
+      <section className="bg-blue-50 py-20 text-center">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-4">Our Services</h2>
+          <p className="text-lg text-gray-600">
+            We provide a wide range of NHS and private services to support your health and wellbeing.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {[{
+              title: "NHS Pharmacy First Service",
+              description: "Access treatment for common conditions without needing a GP appointment."
+            }, {
+              title: "COVID Vaccinations",
+              description: "Protect yourself and others with our convenient COVID vaccination service."
+            }, {
+              title: "Blood Pressure Checks",
+              description: "Monitor your heart health with free NHS blood pressure checks."
+            }, {
+              title: "Contraception Service",
+              description: "Confidential advice and NHS-supplied oral contraception."
+            }, {
+              title: "Travel Clinic",
+              description: "Get expert advice, vaccines, and medication for safe travel abroad."
+            }, {
+              title: "Weight Loss Support",
+              description: "Personalised plans and medication to help you reach your health goals."
+            }, {
+              title: "Ear Wax Removal",
+              description: "Safe, professional ear microsuction services available by appointment."
+            }].map((service, index) => (
+              <Card key={index} className="shadow-md rounded-2xl">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold mb-2">{service.title}</h4>
+                  <p className="text-gray-600 text-sm">{service.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-gray-100 py-10 mt-20">
+        <div className="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
+          &copy; 2025 Dawlish Warren Pharmacy. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  );
+}
