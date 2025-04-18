@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>About Us – Dawlish Warren Pharmacy</title>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
@@ -21,30 +24,39 @@
     </div>
   </header>
 
-  <!-- About -->
-  <section class="bg-blue-50 py-20 text-center">
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-20 text-center" data-aos="zoom-in">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-4">Who We Are</h2>
+      <h2 class="text-4xl font-bold mb-4">About Dawlish Warren Pharmacy</h2>
       <p class="text-lg text-gray-600">
-        Dawlish Warren Pharmacy is your friendly, local pharmacy. Our team is passionate about delivering NHS-backed care with a personal touch.
+        We're proud to be your trusted healthcare partner, providing NHS services with a personal touch.
       </p>
     </div>
   </section>
 
-  <!-- Values -->
+  <!-- Mission & Values -->
   <section class="py-16">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-      <div class="bg-white p-6 rounded-2xl shadow-md">
-        <h4 class="text-xl font-bold mb-2">Patient First</h4>
-        <p class="text-sm text-gray-600">You are our priority. Always.</p>
+      <div class="bg-white p-6 rounded-2xl shadow-md" data-aos="fade-up">
+        <div class="flex justify-center mb-3">
+          <i data-lucide="heart-pulse" class="w-6 h-6 text-blue-600"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-2">Patient-Centered</h4>
+        <p class="text-sm text-gray-600">Your wellbeing is always our top priority.</p>
       </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md">
-        <h4 class="text-xl font-bold mb-2">Expertise You Trust</h4>
-        <p class="text-sm text-gray-600">Our staff are qualified, approachable and experienced.</p>
+      <div class="bg-white p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex justify-center mb-3">
+          <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-600"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-2">Expert Care</h4>
+        <p class="text-sm text-gray-600">Our experienced team is here with trusted, friendly advice.</p>
       </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md">
-        <h4 class="text-xl font-bold mb-2">Community Heart</h4>
-        <p class="text-sm text-gray-600">We’re part of Dawlish Warren. We care like neighbours do.</p>
+      <div class="bg-white p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex justify-center mb-3">
+          <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-2">Locally Focused</h4>
+        <p class="text-sm text-gray-600">We care deeply about the health of our community.</p>
       </div>
     </div>
   </section>
@@ -55,5 +67,10 @@
       &copy; 2025 Dawlish Warren Pharmacy. All rights reserved.
     </div>
   </footer>
+
+  <script>
+    lucide.createIcons();
+    AOS.init();
+  </script>
 </body>
 </html>
