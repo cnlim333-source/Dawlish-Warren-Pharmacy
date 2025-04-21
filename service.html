@@ -11,12 +11,13 @@
   <style>
     body::before {
       content: "";
-      background-image: url('https://images.unsplash.com/photo-1588776840046-38e5527b9376?auto=format&fit=crop&w=1500&q=80');
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYAAAKoCAYAAABXtHMxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAA...'); /* Full image data would go here */
       background-size: cover;
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-position: center;
-      opacity: 0.45;
-      position: fixed;
+      opacity: 0.8;
+      position: absolute;
       top: 0;
       left: 0;
       height: 100%;
@@ -25,8 +26,7 @@
     }
   </style>
 </head>
-<body class="bg-white text-gray-900 font-sans">
-
+<body class="bg-transparent text-gray-900 font-sans">
   <header class="p-6 border-b shadow-sm bg-white/90 backdrop-blur-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">Dawlish Warren Pharmacy</h1>
@@ -39,7 +39,7 @@
     </div>
   </header>
 
-  <section class="bg-white/90 py-20 text-center" data-aos="zoom-in">
+  <section class="bg-white/60 py-20 text-center" data-aos="zoom-in">
     <div class="max-w-4xl mx-auto px-4">
       <h2 class="text-4xl font-bold mb-4">Our Services</h2>
       <p class="text-lg text-gray-700">
@@ -50,32 +50,32 @@
 
   <section class="py-16">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up">
+      <div class="bg-white/60 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up">
         <i data-lucide="stethoscope" class="w-6 h-6 text-blue-600 mb-3 mx-auto"></i>
         <h4 class="text-xl font-bold mb-2">Pharmacy First</h4>
         <p class="text-sm text-gray-600">NHS treatment for minor conditions without a GP visit.</p>
       </div>
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="bg-white/60 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up" data-aos-delay="100">
         <i data-lucide="syringe" class="w-6 h-6 text-blue-600 mb-3 mx-auto"></i>
         <h4 class="text-xl font-bold mb-2">Vaccinations</h4>
         <p class="text-sm text-gray-600">COVID, flu, and travel vaccinations available in-store.</p>
       </div>
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-white/60 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
         <i data-lucide="activity" class="w-6 h-6 text-blue-600 mb-3 mx-auto"></i>
         <h4 class="text-xl font-bold mb-2">Blood Pressure</h4>
         <p class="text-sm text-gray-600">Monitor your heart health with our free NHS checks.</p>
       </div>
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up">
+      <div class="bg-white/60 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up">
         <i data-lucide="pill" class="w-6 h-6 text-blue-600 mb-3 mx-auto"></i>
         <h4 class="text-xl font-bold mb-2">Contraception</h4>
         <p class="text-sm text-gray-600">Access NHS-supplied oral contraception confidentially.</p>
       </div>
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="bg-white/60 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up" data-aos-delay="100">
         <i data-lucide="globe" class="w-6 h-6 text-blue-600 mb-3 mx-auto"></i>
         <h4 class="text-xl font-bold mb-2">Travel Clinic</h4>
         <p class="text-sm text-gray-600">Vaccines and health advice for safe trips abroad.</p>
       </div>
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-white/60 backdrop-blur-md p-6 rounded-2xl shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
         <i data-lucide="ear" class="w-6 h-6 text-blue-600 mb-3 mx-auto"></i>
         <h4 class="text-xl font-bold mb-2">Ear Wax Removal</h4>
         <p class="text-sm text-gray-600">Professional microsuction for clearer hearing.</p>
@@ -83,7 +83,7 @@
     </div>
   </section>
 
-  <footer class="bg-white/90 backdrop-blur-md py-10 mt-20">
+  <footer class="bg-white/60 backdrop-blur-md py-10 mt-20">
     <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
       &copy; 2025 Dawlish Warren Pharmacy. All rights reserved.
     </div>
