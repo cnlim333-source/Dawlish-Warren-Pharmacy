@@ -3,94 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dawlish Warren Pharmacy | Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <title>Dawlish Warren Pharmacy</title>
-  <style>
-    body::before {
-      content: "";
-      background-image: url('https://images.unsplash.com/photo-1632324343799-07bb859be3b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0.55;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: -1;
-    }
-  </style>
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body class="bg-[url('https://images.unsplash.com/photo-1588776814546-b63dcf4ea4ef?auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center text-white min-h-screen">
 
-  <!-- Header -->
-  <header class="p-6 border-b shadow-sm bg-white/90 backdrop-blur-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Dawlish Warren Pharmacy</h1>
-      <nav class="space-x-4">
-        <a href="index.html" class="text-sm text-blue-600 font-semibold">Home</a>
-        <a href="about.html" class="text-sm text-gray-700 hover:text-blue-600">About</a>
-        <a href="service.html" class="text-sm text-gray-700 hover:text-blue-600">Services</a>
-        <a href="booking.html" class="text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-2xl">Book</a>
-      </nav>
-    </div>
-  </header>
+  <div class="bg-black/60 min-h-screen p-6">
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center mb-8">
+      <h1 class="text-3xl font-bold">DWP</h1>
+      <ul class="flex space-x-4 text-lg">
+        <li><a href="home.html" class="hover:underline">Home</a></li>
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="services.html" class="hover:underline">Services</a></li>
+        <li><a href="booking.html" class="hover:underline">Booking</a></li>
+      </ul>
+    </nav>
 
-  <!-- Hero -->
-  <section class="bg-white/90 py-24 text-center" data-aos="zoom-in">
-    <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-5xl font-bold mb-4">Your Local Health Partner</h2>
-      <p class="text-lg text-gray-700 mb-6">
-        NHS-approved services, trusted advice, and caring professionals in Dawlish Warren.
-      </p>
-      <a href="booking.html" class="bg-blue-600 text-white px-8 py-3 rounded-2xl text-lg hover:bg-blue-700 transition">
-        Book an Appointment
-      </a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="mt-20 max-w-2xl">
+      <h2 class="text-5xl font-bold mb-6">Welcome to Dawlish Warren Pharmacy</h2>
+      <p class="text-lg mb-6">Your trusted local pharmacy offering NHS services, health checks, and personalized care—all under one roof.</p>
+      <a href="booking.html" class="bg-blue-600 px-6 py-3 rounded shadow hover:bg-blue-700 transition">Book an Appointment</a>
+    </section>
 
-  <!-- Features -->
-  <section class="py-16">
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md" data-aos="fade-up">
-        <div class="flex justify-center mb-3">
-          <i data-lucide="shield-check" class="w-6 h-6 text-blue-600"></i>
-        </div>
-        <h4 class="text-xl font-bold mb-2">NHS Services</h4>
-        <p class="text-sm text-gray-600">We offer trusted, accessible care supported by the NHS.</p>
+    <!-- Highlights -->
+    <section class="mt-20">
+      <h3 class="text-2xl font-semibold mb-4">Our Top Services</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white/20 backdrop-blur-md p-6 rounded-xl shadow">💊 NHS Pharmacy First</div>
+        <div class="bg-white/20 backdrop-blur-md p-6 rounded-xl shadow">🩺 Blood Pressure Checks</div>
+        <div class="bg-white/20 backdrop-blur-md p-6 rounded-xl shadow">💉 COVID Vaccinations</div>
+        <div class="bg-white/20 backdrop-blur-md p-6 rounded-xl shadow">🌍 Travel Health Services</div>
       </div>
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
-        <div class="flex justify-center mb-3">
-          <i data-lucide="user-check" class="w-6 h-6 text-blue-600"></i>
-        </div>
-        <h4 class="text-xl font-bold mb-2">Expert Advice</h4>
-        <p class="text-sm text-gray-600">Friendly pharmacists ready to support your health needs.</p>
-      </div>
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
-        <div class="flex justify-center mb-3">
-          <i data-lucide="home" class="w-6 h-6 text-blue-600"></i>
-        </div>
-        <h4 class="text-xl font-bold mb-2">Community Focused</h4>
-        <p class="text-sm text-gray-600">Serving Dawlish Warren with personalized attention.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
-  <!-- Footer -->
-  <footer class="bg-white/90 backdrop-blur-md py-10 mt-20">
-    <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
-      &copy; 2025 Dawlish Warren Pharmacy. All rights reserved.
-    </div>
-  </footer>
-
-  <script>
-    lucide.createIcons();
-    AOS.init();
-  </script>
 </body>
 </html>
-
