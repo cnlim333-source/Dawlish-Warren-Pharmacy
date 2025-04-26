@@ -4,28 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>About Us – Dawlish Warren Pharmacy</title>
-  <style>
-    body::before {
-      content: "";
-      background-image: url('https://images.unsplash.com/photo-1588776814812-e1608a6e31de?auto=format&fit=crop&w=1500&q=80');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0.45;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: -1;
-    }
-  </style>
 </head>
-<body class="bg-white text-gray-900 font-sans">
+
+<body class="bg-gradient-to-b from-blue-50 to-white text-gray-900 font-sans">
 
   <!-- Header -->
   <header class="p-6 border-b shadow-sm bg-white/90 backdrop-blur-md sticky top-0 z-50">
@@ -41,50 +23,55 @@
   </header>
 
   <!-- About Section -->
-  <section class="bg-white/90 py-24 text-center" data-aos="zoom-in">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-4">About Dawlish Warren Pharmacy</h2>
-      <p class="text-lg text-gray-700">
-        We’re passionate about providing personalised healthcare in the heart of the community. Our pharmacists are here to support you with expert NHS and private services, from medication advice to clinical care.
-      </p>
-    </div>
-  </section>
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Image -->
+      <div>
+        <img src="images/booking-bg.png" alt="Pharmacy Image" class="rounded-2xl shadow-md">
+      </div>
 
-  <!-- Our Values -->
-  <section class="py-16">
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md" data-aos="fade-up">
-        <i data-lucide="heart-pulse" class="w-6 h-6 text-blue-600 mb-3"></i>
-        <h4 class="text-xl font-bold mb-2">Compassionate Care</h4>
-        <p class="text-sm text-gray-600">We treat every patient with empathy and respect.</p>
-      </div>
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
-        <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-600 mb-3"></i>
-        <h4 class="text-xl font-bold mb-2">Expertise You Trust</h4>
-        <p class="text-sm text-gray-600">Our team stays updated to deliver modern, evidence-based advice.</p>
-      </div>
-      <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
-        <i data-lucide="map-pin" class="w-6 h-6 text-blue-600 mb-3"></i>
-        <h4 class="text-xl font-bold mb-2">Community Roots</h4>
-        <p class="text-sm text-gray-600">We’re proud to serve Dawlish Warren with dedication and care.</p>
+      <!-- Text Content -->
+      <div>
+        <h2 class="text-4xl font-bold mb-6">About Dawlish Warren Pharmacy</h2>
+        <p class="text-lg text-gray-700 mb-6">
+          At Dawlish Warren Pharmacy, we are passionate about delivering trusted healthcare services to our community. 
+          Our professional team is committed to providing personalized support, expert advice, and fast, friendly service.
+        </p>
+
+        <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+        <p class="text-gray-700 mb-6">
+          We aim to improve health outcomes by making quality healthcare more accessible and convenient.
+          Whether it's NHS services, private consultations, or simply advice — we are here for you.
+        </p>
+
+        <h3 class="text-2xl font-bold mb-4">Why Choose Us?</h3>
+        <ul class="list-none text-gray-700 space-y-3">
+          <li>🏥 Modern pharmacy services tailored to your needs</li>
+          <li>💊 Trusted NHS and private health support</li>
+          <li>👨‍⚕️ Friendly, experienced healthcare professionals</li>
+          <li>🌟 Quick and easy online appointment booking</li>
+        </ul>
+
+        <!-- Book Button -->
+        <div class="mt-10">
+          <a href="booking.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-2xl text-lg transition">
+            Book Your Appointment
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white/90 backdrop-blur-md py-10 mt-20">
+  <footer class="bg-white/90 backdrop-blur-md py-10 mt-20 rounded-2xl mx-4 shadow-inner">
     <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
       &copy; 2025 Dawlish Warren Pharmacy. All rights reserved.
     </div>
   </footer>
 
-  <script>
-    lucide.createIcons();
-    AOS.init();
-  </script>
 </body>
 </html>
-
-
 
 
