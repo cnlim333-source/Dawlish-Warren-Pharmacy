@@ -31,7 +31,7 @@
 
 <body class="text-gray-900 font-sans">
 
-  <!-- Overlay to make text readable -->
+  <!-- White overlay to make text readable -->
   <div class="overlay min-h-screen">
 
     <!-- Header -->
@@ -133,9 +133,9 @@
     function openModal(link) {
       document.getElementById('modal').classList.remove('hidden');
       const modalContent = document.getElementById('modalContent');
-      modalContent.classList.remove('show'); // Reset animation
+      modalContent.classList.remove('show');
       setTimeout(() => {
-        modalContent.classList.add('show'); // Animate
+        modalContent.classList.add('show');
       }, 50);
       document.getElementById('bookingIframe').src = link;
       document.body.classList.add('overflow-hidden');
@@ -152,7 +152,6 @@
       document.body.classList.remove('overflow-hidden');
     }
 
-    // Detect when booking is complete
     window.addEventListener('message', function(event) {
       if (event.data === 'booking-complete') {
         document.getElementById('modal').classList.add('hidden');
@@ -163,6 +162,5 @@
 
 </body>
 </html>
-
 
 
