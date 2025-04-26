@@ -6,8 +6,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Book a Service – Dawlish Warren Pharmacy</title>
   <style>
-    .modal {
-      background: rgba(0,0,0,0.7);
+    .modal-bg {
+      background: rgba(0, 0, 0, 0.7);
     }
   </style>
 </head>
@@ -31,58 +31,55 @@
     <div class="max-w-4xl mx-auto px-6">
       <h2 class="text-4xl font-bold mb-6">Book a Pharmacy Service</h2>
       <p class="text-lg text-gray-700 mb-10">
-        Please select the service you require below and complete your booking online.
+        Select the service you need and complete your booking online.
       </p>
 
       <!-- Service Buttons -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <button onclick="openModal()" class="bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
-          📋 Sore Throat Consultation
+        <button onclick="openModal('https://dawlishwarrenpharmacy.setmore.com/services/c9244ca3-7563-4610-bc0a-1c16c2d01265')" class="bg-red-500 text-white font-bold py-4 px-6 rounded-2xl hover:bg-red-600 transition">
+          📋 Sore Throat Consultation (5+)
         </button>
 
-        <button onclick="openModal()" class="bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
-          👂 Ear Infection Consultation
+        <button onclick="openModal('https://dawlishwarrenpharmacy.setmore.com/services/a4e7f322-c05c-405e-8f41-6bdd2001eef3')" class="bg-blue-500 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-600 transition">
+          👂 Acute Otitis Media Consultation (1–17)
         </button>
 
-        <button onclick="openModal()" class="bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
-          🦠 Impetigo Treatment
+        <button onclick="openModal('https://dawlishwarrenpharmacy.setmore.com/services/0173894b-9e88-4a71-b1ff-a074bd99a63f')" class="bg-yellow-500 text-white font-bold py-4 px-6 rounded-2xl hover:bg-yellow-600 transition">
+          🦠 Impetigo Consultation (1+)
         </button>
 
-        <button onclick="openModal()" class="bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
-          🧻 Urinary Tract Infection (UTI)
+        <button onclick="openModal('https://dawlishwarrenpharmacy.setmore.com/services/09a76e67-2e35-46b7-8787-97146135cddc')" class="bg-purple-500 text-white font-bold py-4 px-6 rounded-2xl hover:bg-purple-600 transition">
+          🤧 Sinusitis Consultation (12+)
         </button>
 
-        <button onclick="openModal()" class="bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
-          🤧 Sinusitis Consultation
+        <button onclick="openModal('https://dawlishwarrenpharmacy.setmore.com/services/7dd5895b-1458-4da8-8a49-c67aaaeae5a3')" class="bg-pink-500 text-white font-bold py-4 px-6 rounded-2xl hover:bg-pink-600 transition">
+          🧻 UTI Consultation (16–64)
         </button>
 
-        <button onclick="openModal()" class="bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
-          🐜 Infected Insect Bite
+        <button onclick="openModal('https://dawlishwarrenpharmacy.setmore.com/services/c807a0e0-d022-469d-a97c-b4619d7063b3')" class="bg-green-500 text-white font-bold py-4 px-6 rounded-2xl hover:bg-green-600 transition">
+          🐜 Infected Insect Bite Consultation (1+)
         </button>
 
-        <button onclick="openModal()" class="bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
-          🌟 Shingles Treatment
+        <button onclick="openModal('https://dawlishwarrenpharmacy.setmore.com/services/712df400-b1e8-41eb-81d8-8815404d60b6')" class="bg-indigo-500 text-white font-bold py-4 px-6 rounded-2xl hover:bg-indigo-600 transition">
+          🌟 Shingles Consultation (50+)
         </button>
 
-        <button onclick="openModal()" class="bg-green-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-green-700 transition">
-          💉 Flu Vaccination
+        <button disabled class="bg-gray-400 text-white font-bold py-4 px-6 rounded-2xl cursor-not-allowed">
+          ❤️ Blood Pressure Check (Coming Soon)
         </button>
 
-        <button onclick="openModal()" class="bg-red-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-red-700 transition">
-          ❤️ Blood Pressure Check
+        <button disabled class="bg-gray-400 text-white font-bold py-4 px-6 rounded-2xl cursor-not-allowed">
+          💉 Flu Vaccination (Coming Soon)
         </button>
       </div>
     </div>
   </section>
 
   <!-- Modal Popup -->
-  <div id="modal" class="hidden fixed inset-0 flex items-center justify-center z-50 modal">
+  <div id="modal" class="hidden fixed inset-0 flex items-center justify-center z-50 modal-bg">
     <div class="bg-white rounded-2xl overflow-hidden shadow-xl max-w-3xl w-full relative">
-      <!-- Close Button -->
       <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-600 hover:text-black text-2xl font-bold">&times;</button>
-
-      <!-- Embedded Booking Iframe -->
-      <iframe src="https://dawlishwarrenpharmacy.setmore.com" width="100%" height="600" frameborder="0"></iframe>
+      <iframe id="bookingIframe" src="" width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -93,14 +90,17 @@
     </div>
   </footer>
 
-  <!-- Modal Script -->
+  <!-- Scripts -->
   <script>
-    function openModal() {
+    function openModal(link) {
       document.getElementById('modal').classList.remove('hidden');
+      document.getElementById('bookingIframe').src = link;
       document.body.classList.add('overflow-hidden');
     }
+
     function closeModal() {
       document.getElementById('modal').classList.add('hidden');
+      document.getElementById('bookingIframe').src = "";
       document.body.classList.remove('overflow-hidden');
     }
   </script>
