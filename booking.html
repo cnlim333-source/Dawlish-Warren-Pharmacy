@@ -4,19 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <title>Book an Appointment – Dawlish Warren Pharmacy</title>
-  <style>
-    body {
-      background: url('https://images.unsplash.com/photo-1588776814546-ec07b3a15b78?auto=format&fit=crop&w=1740&q=80') no-repeat center center fixed;
-      background-size: cover;
-      backdrop-filter: brightness(95%);
-    }
-  </style>
+  <title>Book a Service – Dawlish Warren Pharmacy</title>
 </head>
-<body class="text-gray-900 font-sans">
+<body class="bg-gray-50 text-gray-900 font-sans">
 
   <!-- Header -->
   <header class="p-6 border-b shadow-sm bg-white/90 backdrop-blur-md sticky top-0 z-50">
@@ -32,43 +22,61 @@
   </header>
 
   <!-- Booking Section -->
-  <section class="py-20 text-center bg-white/80 backdrop-blur-md rounded-3xl my-10 mx-4 shadow-lg animate-fade-in">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-6">Book Your Pharmacy Appointment</h2>
-      <p class="text-lg text-gray-800 mb-4 font-semibold">
-        📅 Please select the service you need from the list below.<br>
-        Then choose a convenient date and time to visit Dawlish Warren Pharmacy.
+  <section class="py-20 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6">Book a Pharmacy Service</h2>
+      <p class="text-lg text-gray-700 mb-10">
+        Please select the service you require below and complete your booking online. 
+        We look forward to helping you at Dawlish Warren Pharmacy.
       </p>
 
-      <!-- Loading Spinner -->
-      <div id="loading-spinner" class="flex justify-center items-center h-20 mb-6">
-        <div class="animate-spin rounded-full h-12 w-12 border-b-4 border-blue-600"></div>
-      </div>
+      <!-- Service Buttons -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <a href="https://dawlishwarrenpharmacy.setmore.com" 
+           class="block bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
+          📋 Sore Throat Consultation
+        </a>
 
-      <!-- Embedded Setmore Calendar -->
-      <div class="relative h-[800px] w-full" id="booking-container">
-        <iframe src="https://dawlishwarrenpharmacy.setmore.com" 
-                width="100%" 
-                height="100%" 
-                frameborder="0" 
-                class="rounded-2xl shadow-md" 
-                id="booking-iframe">
-        </iframe>
-      </div>
-    </div>
-  </section>
+        <a href="https://dawlishwarrenpharmacy.setmore.com" 
+           class="block bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
+          👂 Ear Infection Consultation
+        </a>
 
-  <!-- Thank You Message (hidden initially) -->
-  <section class="py-20 text-center bg-green-50 hidden rounded-3xl my-10 mx-4 shadow-lg" id="thankyou-section">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-6 text-green-700">Thank You for Booking!</h2>
-      <p class="text-lg text-green-700 mb-8">
-        Your appointment has been successfully scheduled at Dawlish Warren Pharmacy.<br>
-        We look forward to welcoming you soon.
-      </p>
-      <a href="index.html" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-2xl hover:bg-blue-700 transition">
-        Back to Home
-      </a>
+        <a href="https://dawlishwarrenpharmacy.setmore.com" 
+           class="block bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
+          🦠 Impetigo Treatment
+        </a>
+
+        <a href="https://dawlishwarrenpharmacy.setmore.com" 
+           class="block bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
+          🧻 Urinary Tract Infection (UTI)
+        </a>
+
+        <a href="https://dawlishwarrenpharmacy.setmore.com" 
+           class="block bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
+          🤧 Sinusitis Consultation
+        </a>
+
+        <a href="https://dawlishwarrenpharmacy.setmore.com" 
+           class="block bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
+          🐜 Infected Insect Bite
+        </a>
+
+        <a href="https://dawlishwarrenpharmacy.setmore.com" 
+           class="block bg-blue-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-700 transition">
+          🌟 Shingles Treatment
+        </a>
+
+        <a href="https://dawlishwarrenpharmacy.setmore.com" 
+           class="block bg-green-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-green-700 transition">
+          💉 Flu Vaccination
+        </a>
+
+        <a href="https://dawlishwarrenpharmacy.setmore.com" 
+           class="block bg-red-600 text-white font-bold py-4 px-6 rounded-2xl hover:bg-red-700 transition">
+          ❤️ Blood Pressure Check
+        </a>
+      </div>
     </div>
   </section>
 
@@ -79,37 +87,8 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script>
-    lucide.createIcons();
-    AOS.init();
-
-    const iframe = document.getElementById('booking-iframe');
-    const spinner = document.getElementById('loading-spinner');
-    const bookingContainer = document.getElementById('booking-container');
-    const thankyouSection = document.getElementById('thankyou-section');
-
-    iframe.onload = function() {
-      const iframeUrl = iframe.contentWindow.location.href;
-      spinner.classList.add('hidden'); // Hide spinner
-      if (iframeUrl.includes("booking/complete")) {
-        bookingContainer.classList.add('hidden');
-        thankyouSection.classList.remove('hidden');
-      }
-    };
-  </script>
-
-  <!-- Fade In Animation -->
-  <style>
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-fade-in {
-      animation: fadeIn 1s ease-out forwards;
-    }
-  </style>
 </body>
 </html>
+
 
 
