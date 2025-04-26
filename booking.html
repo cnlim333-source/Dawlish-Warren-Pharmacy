@@ -28,22 +28,18 @@
   <section class="py-20 text-center bg-white">
     <div class="max-w-4xl mx-auto px-4">
       <h2 class="text-4xl font-bold mb-6">Book Your Pharmacy Appointment</h2>
-      <p class="text-lg text-gray-700 mb-4">
-        Welcome to Dawlish Warren Pharmacy’s online booking system. 
-        You can now easily schedule appointments for our NHS and private services, including Pharmacy First consultations, vaccinations, blood pressure checks, and ear wax removal.
-      </p>
-      <p class="text-lg text-gray-700 mb-8">
-        Please select a service below, choose your preferred date and time, and confirm your appointment. 
-        We look forward to helping you stay healthy and well.
+      <p class="text-lg text-gray-800 mb-4 font-semibold">
+        📅 Please select the service you need from the list below.<br>
+        Then choose a convenient date and time to visit Dawlish Warren Pharmacy.
       </p>
 
       <!-- Embedded Setmore Calendar -->
-      <div class="relative h-[800px] w-full" id="booking-container">
+      <div class="relative h-[800px] w-full mt-10" id="booking-container">
         <iframe src="https://dawlishwarrenpharmacy.setmore.com" 
                 width="100%" 
                 height="100%" 
                 frameborder="0" 
-                class="rounded-2xl shadow-md"
+                class="rounded-2xl shadow-md" 
                 id="booking-iframe">
         </iframe>
       </div>
@@ -56,7 +52,7 @@
       <h2 class="text-4xl font-bold mb-6 text-green-700">Thank You for Booking!</h2>
       <p class="text-lg text-green-700">
         Your appointment has been successfully scheduled at Dawlish Warren Pharmacy.<br>
-        We look forward to welcoming you. If you have any questions, feel free to contact us!
+        We look forward to welcoming you soon.
       </p>
     </div>
   </section>
@@ -73,7 +69,7 @@
     lucide.createIcons();
     AOS.init();
 
-    // Small trick: Listen for Setmore 'Thank You' page load inside iframe
+    // Show Thank You Message after booking
     const iframe = document.getElementById('booking-iframe');
     iframe.onload = function() {
       const iframeUrl = iframe.contentWindow.location.href;
@@ -85,3 +81,4 @@
   </script>
 </body>
 </html>
+
